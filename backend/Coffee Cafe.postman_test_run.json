@@ -1,0 +1,228 @@
+{
+	"id": "5e5bc820-4265-4de2-85ca-b3794dcc4f3b",
+	"name": "Coffee Cafe",
+	"timestamp": "2022-07-01T19:09:54.694Z",
+	"collection_id": "5514340-fe0d997a-11f9-4aca-80b6-cd1ca80317b3",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 10,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "77963e52-e2ed-40cb-9ee6-ee70ee67cb7b",
+			"name": "Create drink",
+			"url": "http://127.0.0.1:5000/drinks",
+			"time": 841,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Successful POST request": true,
+				"Response has created drink array": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has created drink array": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				841
+			],
+			"allTests": [
+				{
+					"Successful POST request": true,
+					"Response has created drink array": true
+				}
+			]
+		},
+		{
+			"id": "cdd6bac5-9f48-47ba-9bda-1779175febec",
+			"name": "Read drinks",
+			"url": "http://127.0.0.1:5000/drinks",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "31ed9d5a-b0e5-48f6-b80c-9d218e021488",
+			"name": "Read drink detail",
+			"url": "http://127.0.0.1:5000/drinks-detail",
+			"time": 305,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response contains drinks array": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains drinks array": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				305
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response contains drinks array": true
+				}
+			]
+		},
+		{
+			"id": "8294dca0-af77-4a18-aa3f-c806bd670fa8",
+			"name": "Invalid read drink detail",
+			"url": "http://127.0.0.1:5000/drinks-detail",
+			"time": 162,
+			"responseCode": {
+				"code": 401,
+				"name": "UNAUTHORIZED"
+			},
+			"tests": {
+				"Status code is 401": true,
+				"Unauthorized to get response": true
+			},
+			"testPassFailCounts": {
+				"Status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Unauthorized to get response": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				162
+			],
+			"allTests": [
+				{
+					"Status code is 401": true,
+					"Unauthorized to get response": true
+				}
+			]
+		},
+		{
+			"id": "de92805b-e647-435c-b4f5-ff89a7e67d13",
+			"name": "Update drink",
+			"url": "http://127.0.0.1:5000/drinks/2",
+			"time": 162,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				162
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "289bc581-b89f-4c5c-938c-36d3d8a6f981",
+			"name": "Delete drink",
+			"url": "http://127.0.0.1:5000/drinks/2",
+			"time": 519,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Deleted drink id is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Deleted drink id is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				519
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Deleted drink id is returned": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1996,
+	"collection": {
+		"requests": [
+			{
+				"id": "77963e52-e2ed-40cb-9ee6-ee70ee67cb7b",
+				"method": "POST"
+			},
+			{
+				"id": "cdd6bac5-9f48-47ba-9bda-1779175febec",
+				"method": "GET"
+			},
+			{
+				"id": "31ed9d5a-b0e5-48f6-b80c-9d218e021488",
+				"method": "GET"
+			},
+			{
+				"id": "8294dca0-af77-4a18-aa3f-c806bd670fa8",
+				"method": "GET"
+			},
+			{
+				"id": "de92805b-e647-435c-b4f5-ff89a7e67d13",
+				"method": "PATCH"
+			},
+			{
+				"id": "289bc581-b89f-4c5c-938c-36d3d8a6f981",
+				"method": "DELETE"
+			}
+		]
+	}
+}
